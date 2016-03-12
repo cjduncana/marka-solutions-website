@@ -5,30 +5,30 @@
     <meta charset="UTF-8">
 
     <!-- Favicons -->
-    <link type="image/x-icon" href="./images/favicon.ico" rel="icon" />
+        <link type="image/x-icon" href="./images/favicon.ico" rel="icon" />
     <!-- Favicons End -->
 
     <!-- Cascading Style Sheets -->
-    <link rel="stylesheet" type="text/css" href="./home_page/css/home_page.css" />
-    <!-- Normalize 3.0.2 -->
-    <link rel="stylesheet" type="text/css" href="./home_page/css/normalize.css">
-    <!-- Skeleton 2.0.4 -->
-    <link rel="stylesheet" type="text/css" href="./home_page/css/skeleton.css">
-    <!-- Supersized 3.2.7 -->
-    <link rel="stylesheet" type="text/css" href="./home_page/css/supersized.css" />
-    <!-- Supersized Theme: Shutter 1.1 -->
-    <link rel="stylesheet" type="text/css" href="./home_page/css/supersized.shutter.css" />
+        <link rel="stylesheet" type="text/css" href="./home_page/css/home_page.css" />
+        <!-- Normalize 3.0.2 -->
+        <link rel="stylesheet" type="text/css" href="./home_page/css/normalize.css">
+        <!-- Skeleton 2.0.4 -->
+        <link rel="stylesheet" type="text/css" href="./home_page/css/skeleton.css">
+        <!-- Supersized 3.2.7 -->
+        <link rel="stylesheet" type="text/css" href="./home_page/css/supersized.css" />
+        <!-- Supersized Theme: Shutter 1.1 -->
+        <link rel="stylesheet" type="text/css" href="./home_page/css/supersized.shutter.css" />
     <!-- Cascading Style Sheets End -->
 
     <!-- Scripts -->
-    <!-- JQuery 1.7.1 -->
-    <script type="text/javascript"  src="./home_page/js/jquery-1.7.1.min.js"></script>
-    <script type="text/javascript">
-        // Make the first section the size of the screen
-        $(function() {
-            $("#home").height($(window).height());
-        })
-    </script>
+        <!-- JQuery 1.7.1 -->
+        <script type="text/javascript"  src="./home_page/js/jquery-1.7.1.min.js"></script>
+        <script type="text/javascript">
+            // Make the first section the size of the screen
+            $(function() {
+                $("#home").height($(window).height());
+            })
+        </script>
     <!-- Scripts End -->
 </head>
 <body>
@@ -167,54 +167,53 @@
     <!-- Footer End -->
 
     <!-- Scripts -->
-    <!-- Supersized 3.2.7 -->
-    <script type="text/javascript"  src="./home_page/js/supersized.3.2.7.min.js"></script>
-    <!-- Supersized Theme: Shutter 1.1 -->
-    <script type="text/javascript"  src="./home_page/js/supersized.shutter.min.js"></script>
-    <!-- Supersized Initialize Variables -->
-    <script type="text/javascript">
-        $(function($) {
+        <!-- Supersized 3.2.7 -->
+        <script type="text/javascript"  src="./home_page/js/supersized.3.2.7.min.js"></script>
+        <!-- Supersized Theme: Shutter 1.1 -->
+        <script type="text/javascript"  src="./home_page/js/supersized.shutter.min.js"></script>
+        <!-- Supersized Initialize Variables -->
+        <script type="text/javascript">
+            $(function($) {
 
-            $.supersized( {
+                $.supersized( {
 
-                // Functionality
-                transition              :   2,          // 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom,
-                                                        // 5-Slide Left, 6-Carousel Right, 7-Carousel Left
-                transition_speed        :   1000,       // Speed of transition
-                keyboard_nav            :   0,          // Keyboard navigation on/off
+                    // Functionality
+                    transition              :   2,          // 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom,
+                                                            // 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+                    transition_speed        :   1000,       // Speed of transition
+                    keyboard_nav            :   0,          // Keyboard navigation on/off
 
-                // Size & Position
-                horizontal_center       :   1,          // Horizontally center background
-                fit_always              :   0,          // Image will never exceed browser width or height
-                                                        // (Ignores min. dimensions)
-                fit_portrait            :   0,          // Portrait images will not exceed browser height
+                    // Size & Position
+                    horizontal_center       :   1,          // Horizontally center background
+                    fit_always              :   0,          // Image will never exceed browser width or height
+                                                            // (Ignores min. dimensions)
+                    fit_portrait            :   0,          // Portrait images will not exceed browser height
 
-                // Components
-                slides                  :   [           // Slideshow Images, image_small attribute is used to load the
-                                                        // mobile version image, main_title attribute is used to add the
-                                                        // image tile div
-                    {
-                        image           :   './images/home_slider/image2.jpg',
-                        image_small     :   './images/home_slider/image2_s.jpg',
-                        main_title      :   "#home_slider_title2"
-                    }, {
-                        image           :   './images/home_slider/image3.jpg',
-                        image_small     :   './images/home_slider/image3_s.jpg',
-                        main_title      :   "#home_slider_title3"
-                    }, {
-                        image           :   './images/home_slider/image4.jpg',
-                        image_small     :   './images/home_slider/image4_s.jpg',
-                        main_title      :   "#home_slider_title4"
-                    }, {
-                        image           :   './images/home_slider/image5.jpg',
-                        image_small     :   './images/home_slider/image5_s.jpg',
-                        main_title      :   "#home_slider_title5"
-                    }
-                ],
+                    // Components
+                    slides                  :   [           // Slideshow Images, image_small attribute is used to load the
+                                                            // mobile version image, main_title attribute is used to add the
+                                                            // image tile div
+                        {
+                            image           :   './images/home_slider/image2.jpg',
+                            image_small     :   './images/home_slider/image2_s.jpg',
+                            main_title      :   "#home_slider_title2"
+                        }, {
+                            image           :   './images/home_slider/image3.jpg',
+                            image_small     :   './images/home_slider/image3_s.jpg',
+                            main_title      :   "#home_slider_title3"
+                        }, {
+                            image           :   './images/home_slider/image4.jpg',
+                            image_small     :   './images/home_slider/image4_s.jpg',
+                            main_title      :   "#home_slider_title4"
+                        }, {
+                            image           :   './images/home_slider/image5.jpg',
+                            image_small     :   './images/home_slider/image5_s.jpg',
+                            main_title      :   "#home_slider_title5"
+                        }
+                    ],
+                });
             });
-        });
-    </script>
-    <!-- Supersized Initialize Variables End -->
+        </script>
     <!-- Scripts End -->
 </body>
 </html>
