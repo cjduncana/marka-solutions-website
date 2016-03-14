@@ -12,19 +12,26 @@
     }
 /* Fonts end */
 
-section > header {
-    /* Gives a white background to section headers */
-    background-color:   white;
-}
-
-section > header > h1 {
+h1, h2 {
     /* Styles the header's text */
     position:           relative;
     display:            block;
     font-family:        'BebasNeueRegular', Arial, Helvetica, sans-serif;
-    font-size:          86px;
     text-transform:     uppercase;
     font-weight:        400;
+}
+
+section:not(#home) h1 {
+    font-size:          86px;
+}
+
+section:not(#home) h2 {
+    font-size:          44px;
+}
+
+section > header {
+    /* Gives a white background to section headers */
+    background-color:   white;
 }
 
 section:not(#home) > header > *, section:not(#home) > div > * {
