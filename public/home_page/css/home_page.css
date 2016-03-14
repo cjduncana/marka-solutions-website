@@ -63,7 +63,7 @@ section:not(#home) > div {
 }
 
 /* Services section */
- #services > div > header > div {
+ #services .tagline {
     /* Adds padding above and below the title */
     padding-top:        54px;
     padding-bottom:     54px;
