@@ -23,7 +23,11 @@ section > header > h1 {
     font-size:          86px;
     text-transform:     uppercase;
     font-weight:        400;
+}
+
+section:not(#home) > header > *, section:not(#home) > div > * {
     /* Positions the header to the center of the page */
+    position:           relative;
     width:              100%;
     max-width:          960px;
     margin:             0 auto;
@@ -40,7 +44,7 @@ section:not(#home) > div {
 /* For devices larger than 400px */
 @media (min-width: 400px) {
 
-    section > header > h1 {
+    section:not(#home) > header > *, section:not(#home) > div > * {
         /* Header position */
         width:          85%;
         padding:        0
@@ -50,7 +54,7 @@ section:not(#home) > div {
 /* For devices larger than 550px */
 @media (min-width: 550px) {
 
-    section > header > h1 {
+    section:not(#home) > header > *, section:not(#home) > div > * {
         /* Header position */
         width:          80%
     }
