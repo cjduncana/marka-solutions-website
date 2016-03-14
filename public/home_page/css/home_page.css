@@ -1,14 +1,16 @@
 
-/* Allows Bebas Neue to be used in this CSS file */
-@font-face{
-    font-family:        'BebasNeueRegular';
-    src:                url('../../fonts/bebasneue-webfont.eot');
-    src:                url('../../fonts/bebasneue-webfont.woff') format('woff'),
+/* Fonts */
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800,300italic,400italic,600italic);
+    @font-face{
+        font-family:    'BebasNeueRegular';
+        src:            url('../../fonts/bebasneue-webfont.eot');
+        src:            url('../../fonts/bebasneue-webfont.woff') format('woff'),
                         url('../../fonts/bebasneue-webfont.ttf') format('truetype'),
                         url('../../fonts/bebasneue-webfont.svg') format('svg');
-    font-weight:        normal;
-    font-style:         normal
-}
+        font-weight:    normal;
+        font-style:     normal
+    }
+/* Fonts end */
 
 section > header {
     /* Gives a white background to section headers */
@@ -39,6 +41,18 @@ section:not(#home) > div {
     background:         #222 url(../../images/bg_pattern_black.jpg) ;
     background-image:   -Webkit-image-set(url(../../images/bg_pattern_black.jpg) 1x,
                         url(../../images/bg_pattern_black@2x.jpg) 2x);
+    /* Colors the text white */
+    color:              white;
+}
+
+.tagline {
+    font-size:          20px;
+    font-family:        'Open Sans',
+                        'Helvetica Neue', Helvetica,
+                        'Lucida Sans Unicode', 'Lucida Grande',
+                        Arial, sans-serif;
+    font-weight:        lighter;
+    line-height:        1.5
 }
 
 /* Services section */
