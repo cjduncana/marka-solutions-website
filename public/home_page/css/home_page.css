@@ -1,5 +1,5 @@
 
-/* Fonts */
+/* Allows Bebas Neue to be used in this CSS file */
 @font-face{
     font-family:        'BebasNeueRegular';
     src:                url('../../fonts/bebasneue-webfont.eot');
@@ -11,16 +11,19 @@
 }
 
 section > header {
+    /* Gives a white background to section headers */
     background-color:   white;
 }
 
 section > header > h1 {
+    /* Styles the header's text */
     position:           relative;
     display:            block;
     font-family:        'BebasNeueRegular', Arial, Helvetica, sans-serif;
     font-size:          86px;
     text-transform:     uppercase;
     font-weight:        400;
+    /* Positions the header to the center of the page */
     width:              100%;
     max-width:          960px;
     margin:             0 auto;
@@ -28,6 +31,7 @@ section > header > h1 {
 }
 
 section:not(#home) > div {
+    /* Gives a pattern background to all sections, except the home section */
     background:         #222 url(../../images/bg_pattern_black.jpg) ;
     background-image:   -Webkit-image-set(url(../../images/bg_pattern_black.jpg) 1x,
                         url(../../images/bg_pattern_black@2x.jpg) 2x);
@@ -37,6 +41,7 @@ section:not(#home) > div {
 @media (min-width: 400px) {
 
     section > header > h1 {
+        /* Header position */
         width:          85%;
         padding:        0
     }
@@ -46,6 +51,7 @@ section:not(#home) > div {
 @media (min-width: 550px) {
 
     section > header > h1 {
+        /* Header position */
         width:          80%
     }
 }
@@ -54,6 +60,7 @@ section:not(#home) > div {
 @media only screen and (max-width:767px) {
 
     section > header > h1 {
+        /* Section's header type size */
         font-size:      50px
     }
 }
@@ -62,6 +69,7 @@ section:not(#home) > div {
 @media only screen and (min-width:480px) and (max-width:767px) {
 
     section > header > h1 {
+        /* Section's header type size */
         font-size:      50px
     }
 }
