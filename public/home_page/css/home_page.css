@@ -27,6 +27,12 @@ section > header > h1 {
     padding:            0 20px
 }
 
+section:not(#home) > div {
+    background:         #222 url(../../images/bg_pattern_black.jpg) ;
+    background-image:   -Webkit-image-set(url(../../images/bg_pattern_black.jpg) 1x,
+                        url(../../images/bg_pattern_black@2x.jpg) 2x);
+}
+
 /* For devices larger than 400px */
 @media (min-width: 400px) {
 
