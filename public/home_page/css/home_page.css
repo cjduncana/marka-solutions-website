@@ -87,6 +87,7 @@ section:not(#home) > div {
         width:              160px;
         height:             220px;
         padding:            15px;
+        text-decoration:    none;
     }
 
     .service img, .service source {
@@ -106,6 +107,15 @@ section:not(#home) > div {
         /* Text positioning */
         display:            block;
         text-align:         center;
+    }
+
+    .fancybox-title {
+        /* Text styling */
+        color:              #d5d5d5;
+        font-family:        'OswaldRegular', Arial, Helvetica, sans-serif;
+        font-size:          18px;
+        font-weight:        400;
+        width:              inherit;
     }
 /* Services section end */
 

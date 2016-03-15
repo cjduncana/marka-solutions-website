@@ -32,7 +32,7 @@
         <script type="text/javascript">
             // Make the first section the size of the screen
             $(function() {
-                $("#home").height($(window).height());
+                $('#home').height($(window).height());
             })
         </script>
         <!-- Google Analytics -->
@@ -144,18 +144,8 @@
             $(document).ready(function() {
 
                 // Add the rest of the home page
-                $.get("index_content.html", function(data) {
-                    $("main").append(data);
-                });
-
-                // Services Fancybox
-                $(".service a").fancybox({
-                    'padding'           : 0,
-                    'titlePosition'     : 'outside',
-                    'transitionIn'      : 'fade',
-                    'transitionOut'     : 'fade',
-                    'overlayColor'      : '#000',
-                    'overlayOpacity'    :.75
+                $.get('index_content.html', function(data) {
+                    $('main').append(data);
                 });
             });
         </script>
