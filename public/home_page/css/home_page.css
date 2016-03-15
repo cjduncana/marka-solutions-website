@@ -240,6 +240,12 @@ section:not(#home) > div {
      #twitter div {
         padding:            25px;
      }
+
+    /* Video section */
+    #sample_video div img, #sample_video div iframe {
+        margin-top:         10px;
+        margin-bottom:      10px;
+    }
 }
 
 @media only screen and (max-width:480px) {
@@ -254,4 +260,9 @@ section:not(#home) > div {
         padding:            0;
      }
 
+    /* Video section */
+    #sample_video div img, #sample_video div iframe {
+        margin-top:         5px;
+        margin-bottom:      5px;
+    }
 }
