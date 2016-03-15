@@ -19,7 +19,7 @@
         font-weight:    normal;
         font-style:     normal
     }
-/* Fonts end */
+/* Fonts End */
 
 h1, h2 {
     /* Styles the header's text */
@@ -117,7 +117,7 @@ section:not(#home) > div {
         font-weight:        400;
         width:              inherit;
     }
-/* Services section end */
+/* Services section End */
 
 /* Clients section */
     #clients .parallax {
@@ -131,6 +131,24 @@ section:not(#home) > div {
         margin:             50px 0;
     }
 /* Clients section End */
+
+/* Portfolio section */
+    .gallery {
+        overflow-x:         hidden;
+        overflow-y:           auto;
+    }
+
+    .gallery-item {
+        width:              230px;
+        height:             auto;
+        float:              left;
+        margin:             5px;
+    }
+
+    .gallery-item img {
+        width:              inherit;
+    }
+/* Portfolio section End */
 
 /* For devices larger than 400px */
 @media (min-width: 400px) {
@@ -159,10 +177,23 @@ section:not(#home) > div {
     }
 
     /* Services section */
-        #services > div > header > div {
-            /* Adds padding above and below the title */
-            padding-top:        49px;
-            padding-bottom:     49px;
-        }
-    /* Services section end */
+    #services > div > header > div {
+        /* Adds padding above and below the title */
+        padding-top:        49px;
+        padding-bottom:     49px;
+    }
+
+    /* Portfolio section */
+    .gallery-item {
+        width:              170px;
+     }
+}
+
+@media only screen and (max-width:480px) {
+
+    /* Portfolio section */
+    .gallery-item {
+        width:              138px;
+     }
+
 }
