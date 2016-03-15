@@ -185,6 +185,13 @@ section:not(#home) > div {
     }
 /* Twitter Section End */
 
+/* Video Section */
+    #sample_video div img {
+        margin-top:         15px;
+        margin-bottom:      15px;
+    }
+/* Video Section End */
+
 /* For devices larger than 400px */
 @media (min-width: 400px) {
 
