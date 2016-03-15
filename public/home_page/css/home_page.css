@@ -133,6 +133,18 @@ section:not(#home) > div {
 /* Clients section End */
 
 /* Portfolio section */
+    .gallery-option {
+        float:              right;
+        margin:             15px;
+        /* Text styling */
+        color:              white;
+        font-family:        'OswaldRegular', Arial, Helvetica, sans-serif;
+        font-size:          16px;
+        text-decoration:    none;
+        text-transform:     uppercase;
+        font-weight:        400;
+    }
+
     .gallery {
         overflow-x:         hidden;
         overflow-y:           auto;
