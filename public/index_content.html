@@ -342,14 +342,53 @@
             </header>
             <div class="parallax">
                 <div>
-                    <img src="./images/video-6.png" alt="Congreso de la Construcción Argos Marka" />
-                    <img src="./images/video-5.png" alt="Marka Solutions" />
-                    <img src="./images/video-4.png" alt="Marka Solutions Inducción" />
-                    <img src="./images/video-3.png" alt="Eventos - Convenciones - Mapping" />
-                    <img src="./images/video-2.png" alt="Marka Solutions - Convenciones - Argos" />
-                    <img src="./images/video-1.png" alt="Regalando sonrisas - Marka Solutions" />
+                    <a class="video-1" href="javascript:youtubeView(1)">
+                        <img src="./images/video-1.png" alt="Regalando sonrisas - Marka Solutions" />
+                    </a>
+                    <a class="video-2" href="javascript:youtubeView(2)">
+                        <img src="./images/video-2.png" alt="Marka Solutions - Convenciones - Argos" />
+                    </a>
+                    <a class="video-3" href="javascript:youtubeView(3)">
+                        <img src="./images/video-3.png" alt="Eventos - Convenciones - Mapping" />
+                    </a>
+                    <a class="video-4" href="javascript:youtubeView(4)">
+                        <img src="./images/video-4.png" alt="Marka Solutions Inducción" />
+                    </a>
+                    <a class="video-5" href="javascript:youtubeView(5)">
+                        <img src="./images/video-5.png" alt="Marka Solutions" />
+                    </a>
+                    <a class="video-6" href="javascript:youtubeView(6)">
+                        <img src="./images/video-6.png" alt="Congreso de la Construcción Argos Marka" />
+                    </a>
                 </div>
             </div>
+            <script>
+                function youtubeView(videoID) {
+                    var youtubeID;
+                    switch(videoID) {
+                        case 1:
+                            youtubeID = 'KIpLee0bvqM';
+                            break;
+                        case 2:
+                            youtubeID = 'Qalc-gi6raE';
+                            break;
+                        case 3:
+                            youtubeID = 'nvvvzQcwoHk';
+                            break;
+                        case 4:
+                            youtubeID = 'bhg3hkDdDg4';
+                            break;
+                        case 5:
+                            youtubeID = '8WITK_3CZXk';
+                            break;
+                        case 6:
+                            youtubeID = 'GLorx0ER1pM';
+                            break;
+                    }
+                    var youtubeFrame = '<iframe width="854" height="510" src="//www.youtube.com/embed/' + youtubeID + '?autoplay=1" frameborder="0" allowfullscreen></iframe>';
+                    $('.video-' + videoID).html(youtubeFrame);
+                }
+            </script>
         </section>
         <!-- Videos End -->
 

@@ -192,7 +192,7 @@ section:not(#home) > div {
         background-size:        2px 2px, 100%;
         background-repeat:      repeat, repeat-y;
     }
-    #sample_video div img {
+    #sample_video div img, #sample_video div iframe {
         margin-top:         15px;
         margin-bottom:      15px;
     }
