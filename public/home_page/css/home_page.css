@@ -121,9 +121,10 @@ section:not(#home) > div {
 
 /* Clients section */
     #clients .parallax {
-        background:         url(../img/parallax_overlay.svg), url(../../images/background/image1.jpg);
-        background-size:    2px 2px, 100%;
-        background-repeat:  repeat, repeat-y;
+        background:             url(../img/parallax_overlay.svg), url(../../images/background/image1.jpg);
+        background-attachment:  scroll, fixed;
+        background-size:        2px 2px, 100%;
+        background-repeat:      repeat, repeat-y;
     }
 
     #clients img {
