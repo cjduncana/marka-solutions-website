@@ -173,6 +173,13 @@ section:not(#home) > div {
 /* Portfolio Section End */
 
 /* Twitter Section */
+    #twitter .parallax {
+        background:             url(../img/parallax_overlay.svg), url(../../images/background/image2.jpg);
+        background-attachment:  scroll, fixed;
+        background-size:        2px 2px, 100%;
+        background-repeat:      repeat, repeat-y;
+    }
+
     #twitter div {
         padding:            50px;
     }
