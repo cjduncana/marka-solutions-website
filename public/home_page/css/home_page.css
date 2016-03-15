@@ -199,12 +199,23 @@ section:not(#home) > div {
 /* Video Section End */
 
 /* About Us Section */
-    section#aboutus div {
+    section#aboutus > div {
         padding-bottom:     50px;
+        width:              inherit;
+        overflow:           auto;
     }
 
     section#aboutus > div > header, section#aboutus > div > div {
         padding-top:        50px;
+    }
+
+    section#aboutus > div > div {
+        width:              inherit;
+    }
+
+    section#aboutus > div > div > div {
+        float:              left;
+        width:              50%;
     }
 /* About Us Section End */
 
