@@ -186,6 +186,12 @@ section:not(#home) > div {
 /* Twitter Section End */
 
 /* Video Section */
+    #sample_video .parallax {
+        background:             url(../img/parallax_overlay.svg), url(../../images/background/image3.jpg);
+        background-attachment:  scroll, fixed;
+        background-size:        2px 2px, 100%;
+        background-repeat:      repeat, repeat-y;
+    }
     #sample_video div img {
         margin-top:         15px;
         margin-bottom:      15px;
