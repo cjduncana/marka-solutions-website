@@ -119,6 +119,18 @@ section:not(#home) > div {
     }
 /* Services section end */
 
+/* Clients section */
+    #clients .parallax {
+        background:         url(../img/parallax_overlay.svg), url(../../images/background/image1.jpg);
+        background-size:    2px 2px, 100%;
+        background-repeat:  repeat, repeat-y;
+    }
+
+    #clients img {
+        margin:             50px 0;
+    }
+/* Clients section End */
+
 /* For devices larger than 400px */
 @media (min-width: 400px) {
 

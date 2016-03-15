@@ -178,7 +178,7 @@
             <header>
                 <h1>Nuestros Clientes</h1>
             </header>
-            <div>
+            <div class="parallax">
                 <div>
                     <img src="./images/client1.png" alt="Copa Airlines Vacations" />
                     <img src="./images/client2.png" alt="Cervecería Nacional, S.A." />
@@ -263,3 +263,11 @@
             <div></div>
         </section>
         <!-- Contact Us End -->
+
+        <!-- Scripts -->
+            <script type="text/javascript">
+                $('.parallax').each(function(){
+                    $(this).parallax("50%", 0.4, true);
+                });
+            </script>
+        <!-- Scripts End -->
