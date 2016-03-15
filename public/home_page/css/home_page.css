@@ -71,7 +71,7 @@ section:not(#home) > div {
     line-height:        1.5
 }
 
-/* Services section */
+/* Services Section */
     #services .tagline {
         /* Adds padding above and below the title */
         padding-top:        54px;
@@ -117,9 +117,9 @@ section:not(#home) > div {
         font-weight:        400;
         width:              inherit;
     }
-/* Services section End */
+/* Services Section End */
 
-/* Clients section */
+/* Clients Section */
     #clients .parallax {
         background:             url(../img/parallax_overlay.svg), url(../../images/background/image1.jpg);
         background-attachment:  scroll, fixed;
@@ -130,9 +130,9 @@ section:not(#home) > div {
     #clients img {
         margin:             50px 0;
     }
-/* Clients section End */
+/* Clients Section End */
 
-/* Portfolio section */
+/* Portfolio Section */
     .gallery-option {
         float:              right;
         margin:             15px;
@@ -170,7 +170,13 @@ section:not(#home) > div {
         text-transform:     uppercase;
         font-weight:        400;
     }
-/* Portfolio section End */
+/* Portfolio Section End */
+
+/* Twitter Section */
+    #twitter div {
+        padding:            50px;
+    }
+/* Twitter Section End */
 
 /* For devices larger than 400px */
 @media (min-width: 400px) {
@@ -209,6 +215,11 @@ section:not(#home) > div {
     .gallery-item {
         width:              170px;
      }
+
+     /* Twitter section */
+     #twitter div {
+        padding:            25px;
+     }
 }
 
 @media only screen and (max-width:480px) {
@@ -216,6 +227,11 @@ section:not(#home) > div {
     /* Portfolio section */
     .gallery-item {
         width:              138px;
+     }
+
+     /* Twitter section */
+     #twitter div {
+        padding:            0;
      }
 
 }
