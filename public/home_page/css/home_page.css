@@ -160,6 +160,16 @@ section:not(#home) > div {
     .gallery-item img {
         width:              inherit;
     }
+
+    .gallery-item span {
+        /* Text styling */
+        color:              white;
+        font-family:        'OswaldRegular', Arial, Helvetica, sans-serif;
+        font-size:          16px;
+        text-decoration:    none;
+        text-transform:     uppercase;
+        font-weight:        400;
+    }
 /* Portfolio section End */
 
 /* For devices larger than 400px */
