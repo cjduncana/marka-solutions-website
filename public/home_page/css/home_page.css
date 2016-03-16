@@ -72,9 +72,10 @@ section:not(#home) > div {
 }
 /* Navigation Bar */
     nav {
-        display:            inline-block;
         margin:             0 auto 20px;
         position:           fixed;
+        top:                50px;
+        right:              50px;
         background-color:   rgba(17, 17, 17, 0.5);
     }
     nav ul {
@@ -87,13 +88,6 @@ section:not(#home) > div {
         list-style-type:    none;
         margin-bottom:      0;
     }
-    /*nav ul:after {
-        content:            ".";
-        display:            block;
-        height:             0;
-        clear:              both;
-        visibility:         hidden;
-    }*/
     nav li a {
         display:            block;
         padding:            10px 15px;
