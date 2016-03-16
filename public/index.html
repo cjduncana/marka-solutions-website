@@ -68,7 +68,7 @@
 </head>
 <body>
     <!-- Navigation Bar -->
-    <nav>
+    <nav style="display: inline-block">
         <ul>
             <li><a href="#home">Inicio</a></li>
             <li><a href="#services">Servicios</a></li>
@@ -177,9 +177,12 @@
                     if ($(this).find('ul').length > 0) {
 
                         // Change width of submenu
+                        var menu_width = $(this).width();
                         var submenu_width = $(this).find('ul').width();
-                        if ($(this).width() < submenu_width) {
+                        if (menu_width < submenu_width) {
                             $(this).width(submenu_width);
+                        } else {
+                            $(this).find('ul').width(menu_width);
                         }
                         
                         // TODO Something that distinguishes links with sub-levels
