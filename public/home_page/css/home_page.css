@@ -70,6 +70,69 @@ section:not(#home) > div {
     font-weight:        lighter;
     line-height:        1.5
 }
+/* Navigation Bar */
+    nav {
+        display:            inline-block;
+        margin:             0 auto 20px;
+        position:           fixed;
+        background-color:   rgba(17, 17, 17, 0.5);
+    }
+    nav ul {
+        padding:            0;
+        margin:             0;
+    }
+    nav li {
+        position:           relative;
+        float:              left;
+        list-style-type:    none;
+        margin-bottom:      0;
+    }
+    /*nav ul:after {
+        content:            ".";
+        display:            block;
+        height:             0;
+        clear:              both;
+        visibility:         hidden;
+    }*/
+    nav li a {
+        display:            block;
+        padding:            10px 15px;
+        line-height:        18px;
+        text-decoration:    none;
+        /* Text styling */
+        color:              white;
+        font-family:        'OswaldRegular', Arial, Helvetica, sans-serif;
+        font-size:          18px;
+        text-align:         center;
+        text-transform:     uppercase;
+        font-weight:        400;
+    }
+    nav li a:hover {
+        outline:            none;
+        text-decoration:    none;
+        color:              rgb(239,61,66);
+    }
+    nav a span {
+        display:            block;
+        float:              right;
+        margin-left:        5px;
+    }
+    nav ul ul {
+        display:            none;
+        margin:             0;
+        position:           absolute;
+        left:               0;
+        background:         rgba(17, 17, 17, 0.5);
+    }
+    nav ul ul li {
+        float:              none;
+    }
+    nav ul ul a {
+        padding:            5px 10px;
+        font-size:          14px;
+        text-align:         left;
+    }
+/* Navigation Bar End */
 
 /* Services Section */
     #services .tagline {
