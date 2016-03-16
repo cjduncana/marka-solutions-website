@@ -180,7 +180,7 @@ section:not(#home) > div {
     #clients .parallax {
         background:             url(../img/parallax_overlay.svg), url(../../images/background/image1.jpg);
         background-attachment:  scroll, fixed;
-        background-size:        2px 2px, 100%;
+        background-size:        1px 1px, 100%;
         background-repeat:      repeat, repeat-y;
     }
 
