@@ -71,6 +71,9 @@ section:not(#home) > div {
     line-height:        1.5
 }
 /* Navigation Bar */
+    .active {
+        color:              rgb(239, 61, 66);
+    }
     nav {
         margin:             0 auto 20px;
         position:           fixed;
@@ -104,7 +107,7 @@ section:not(#home) > div {
     nav li a:hover {
         outline:            none;
         text-decoration:    none;
-        color:              rgb(239,61,66);
+        color:              rgb(239, 61, 66);
     }
     nav a span {
         display:            block;
