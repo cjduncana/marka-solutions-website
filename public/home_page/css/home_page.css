@@ -80,6 +80,7 @@ section:not(#home) > div {
         top:                50px;
         right:              50px;
         background-color:   rgba(17, 17, 17, 0.5);
+        z-index:            1;
     }
     nav ul {
         padding:            0;

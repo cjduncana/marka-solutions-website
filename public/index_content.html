@@ -455,6 +455,16 @@
                     } else if ($(window).scrollTop() < $('#portfolio').offset().top) {
                         $('nav li a[href!="#services"]').removeClass('active');
                         $('nav li a[href="#services"]').addClass('active');
+                        $('nav').animate({
+                            top:    0,
+                            right:  0
+                        }, function() {
+                            $('nav').css({
+                                display:            'block',
+                                backgroundColor:    'rgb(17, 17, 17)',
+                                width:              '100%'
+                            });
+                        });
                     } else if ($(window).scrollTop() < $('#twitter').offset().top) {
                         $('nav li a[href!="#portfolio"]').removeClass('active');
                         $('nav li a[href="#portfolio"]').addClass('active');
