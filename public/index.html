@@ -102,7 +102,10 @@
             </div>
             <div id="social"></div>
             <div id="tags"></div>
-            <div id="pauseplay"></div>
+            <div id="pauseplay">
+                <img src="./images/supersized/pause.png">
+                <img style="display: none" src="./images/supersized/play.png">
+            </div>
             <div id="slideshownavigation"></div>
         </section>
         <!-- Home End -->
@@ -119,7 +122,8 @@
         <!-- Vegas Slideshow Initialization -->
         <script type="text/javascript">
             $(function() {
-                $('#home').vegas({
+                var vegasBkgd = $('#home');
+                vegasBkgd.vegas({
                     slides: [{
                         src:    './images/home_slider/image2.jpg'
                     }, {
@@ -130,6 +134,10 @@
                         src:    './images/home_slider/image5.jpg'
                     }],
                     transition: 'slideUp2'
+                });
+                $('#pauseplay img').click(function() {
+                    $('#pauseplay img').toggle();
+                    vegasBkgd.vegas('toggle');
                 });
             });
         </script>
