@@ -132,6 +132,20 @@ section:not(#home) > div {
     }
 /* Navigation Bar End */
 
+/* Home Section */
+    #home #logo {
+        width:              100%;
+        max-width:          960px;
+        margin:             0 auto;
+    }
+    #home #logo img {
+        position:           absolute;
+        top:                0;
+        max-width:          190px;
+        height:             auto;
+    }
+/* Home Section End */
+
 /* Services Section */
     #services .tagline {
         /* Adds padding above and below the title */
@@ -288,6 +302,9 @@ section:not(#home) > div {
         width:              85%;
         padding:            0
     }
+    #home #logo {
+        width:              85%;
+    }
 }
 
 /* For devices larger than 550px */
@@ -296,6 +313,9 @@ section:not(#home) > div {
     section:not(#home) > header > *, section:not(#home) > div > * {
         /* Header position */
         width:              80%
+    }
+    #home #logo {
+        width:              80%;
     }
 }
 
