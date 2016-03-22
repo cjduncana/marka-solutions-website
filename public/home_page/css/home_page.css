@@ -174,7 +174,15 @@ section:not(#home) > div {
         line-height:        36px;
         cursor:             pointer;
     }
+    #home #slideshownavigation ul li:hover {
+        color:              black;
+        background-color:   white;
+    }
     #home #slideshownavigation .active {
+        background-color:   rgb(239, 61, 66);
+    }
+    #home #slideshownavigation .active:hover {
+        color:              white;
         background-color:   rgb(239, 61, 66);
     }
     #home #slideshownavigation .active:after {
