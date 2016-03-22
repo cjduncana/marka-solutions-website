@@ -252,7 +252,8 @@ section:not(#home) > div {
 
 /* Clients Section */
     #clients .parallax {
-        background:             url(../img/parallax_overlay.svg), url(../../images/background/image1.jpg);
+        background:             url(../img/parallax_overlay.svg),
+                                url(../../images/background/image1.jpg);
         background-attachment:  scroll, fixed;
         background-size:        1px 1px, 100%;
         background-repeat:      repeat, repeat-y;
@@ -305,7 +306,8 @@ section:not(#home) > div {
 
 /* Twitter Section */
     #twitter .parallax {
-        background:             url(../img/parallax_overlay.svg), url(../../images/background/image2.jpg);
+        background:             url(../img/parallax_overlay.svg),
+                                url(../../images/background/image2.jpg);
         background-attachment:  scroll, fixed;
         background-size:        2px 2px, 100%;
         background-repeat:      repeat, repeat-y;
@@ -318,7 +320,8 @@ section:not(#home) > div {
 
 /* Video Section */
     #sample_video .parallax {
-        background:             url(../img/parallax_overlay.svg), url(../../images/background/image3.jpg);
+        background:             url(../img/parallax_overlay.svg),
+                                url(../../images/background/image3.jpg);
         background-attachment:  scroll, fixed;
         background-size:        2px 2px, 100%;
         background-repeat:      repeat, repeat-y;
@@ -350,10 +353,31 @@ section:not(#home) > div {
     }
 /* About Us Section End */
 
+/* Contact Us */
+    #contactus .parallax {
+        background:             url(../img/parallax_overlay.svg),
+                                url(../../images/background/image4.jpg);
+        background-attachment:  scroll, fixed;
+        background-size:        2px 2px, 100%;
+        background-repeat:      repeat, repeat-y;
+    }
+    #contactus > div > div {
+        background:             #222 url(../../images/bg_pattern_black.jpg) ;
+        background-image:       -Webkit-image-set(
+                                    url(../../images/bg_pattern_black.jpg) 1x,
+                                    url(../../images/bg_pattern_black@2x.jpg) 2x
+                                );
+    }
+/* Contact Us End */
+
 /* Footer */
-    footer {
-        background:         url(../../images/bg_pattern_black.jpg);
-        padding-top:        50px;
+    footer.parallax {
+        background:             url(../img/parallax_overlay.svg),
+                                url(../../images/background/image4.jpg);
+        background-attachment:  scroll, fixed;
+        background-size:        2px 2px, 100%;
+        background-repeat:      repeat, repeat-y;
+        padding-top:            50px;
     }
     footer div {
         width:              952px;
