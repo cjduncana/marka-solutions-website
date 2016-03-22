@@ -175,7 +175,7 @@ section:not(#home) > div {
         cursor:             pointer;
     }
     #home #slideshownavigation .active {
-        background-color:  red;
+        background-color:   rgb(239, 61, 66);
     }
     #home #slideshownavigation .active:after {
         right:              100%;
@@ -184,7 +184,7 @@ section:not(#home) > div {
         height:             0;
         width:              0;
         position:           absolute;
-        border-right-color: red;
+        border-right-color: rgb(239, 61, 66);
         border-width:       18px;
 }
 /* Home Section End */
