@@ -18,10 +18,8 @@
         <link rel="stylesheet" type="text/css" href="./home_page/css/normalize.css">
         <!-- Skeleton 2.0.4 -->
         <link rel="stylesheet" type="text/css" href="./home_page/css/skeleton.css">
-        <!-- Supersized 3.2.7 -->
-        <link rel="stylesheet" type="text/css" href="./home_page/css/supersized.css" />
-        <!-- Supersized Theme: Shutter 1.1 -->
-        <link rel="stylesheet" type="text/css" href="./home_page/css/supersized.shutter.css" />
+        <!--  Vegas 2.2.0  -->
+        <link rel="stylesheet" type="text/css" href="./home_page/css/vegas.min.css">
         <!-- Fancybox 1.3.4 -->
         <link rel="stylesheet" type="text/css" href="./home_page/fancybox/jquery.fancybox-1.3.4.css">
     <!-- Cascading Style Sheets End -->
@@ -116,50 +114,22 @@
     <!-- Footer End -->
 
     <!-- Scripts -->
-        <!-- Supersized 3.2.7 -->
-        <script type="text/javascript"  src="./home_page/js/supersized.3.2.7.min.js"></script>
-        <!-- Supersized Theme: Shutter 1.1 -->
-        <script type="text/javascript"  src="./home_page/js/supersized.shutter.min.js"></script>
-        <!-- Supersized Initialize Variables -->
+        <!--  Vegas 2.2.0  -->
+        <script type="text/javascript" src="./home_page/js/vegas.min.js"></script>
+        <!-- Vegas Slideshow Initialization -->
         <script type="text/javascript">
-            $(function($) {
-
-                $.supersized( {
-
-                    // Functionality
-                    transition              :   2,          // 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom,
-                                                            // 5-Slide Left, 6-Carousel Right, 7-Carousel Left
-                    transition_speed        :   1000,       // Speed of transition
-                    keyboard_nav            :   0,          // Keyboard navigation on/off
-
-                    // Size & Position
-                    horizontal_center       :   1,          // Horizontally center background
-                    fit_always              :   0,          // Image will never exceed browser width or height
-                                                            // (Ignores min. dimensions)
-                    fit_portrait            :   0,          // Portrait images will not exceed browser height
-
-                    // Components
-                    slides                  :   [           // Slideshow Images, image_small attribute is used to load the
-                                                            // mobile version image, main_title attribute is used to add the
-                                                            // image tile div
-                        {
-                            image           :   './images/home_slider/image2.jpg',
-                            image_small     :   './images/home_slider/image2_s.jpg',
-                            main_title      :   "#home_slider_title2"
-                        }, {
-                            image           :   './images/home_slider/image3.jpg',
-                            image_small     :   './images/home_slider/image3_s.jpg',
-                            main_title      :   "#home_slider_title3"
-                        }, {
-                            image           :   './images/home_slider/image4.jpg',
-                            image_small     :   './images/home_slider/image4_s.jpg',
-                            main_title      :   "#home_slider_title4"
-                        }, {
-                            image           :   './images/home_slider/image5.jpg',
-                            image_small     :   './images/home_slider/image5_s.jpg',
-                            main_title      :   "#home_slider_title5"
-                        }
-                    ],
+            $(function() {
+                $('#home').vegas({
+                    slides: [{
+                        src:    './images/home_slider/image2.jpg'
+                    }, {
+                        src:    './images/home_slider/image3.jpg'
+                    }, {
+                        src:    './images/home_slider/image4.jpg'
+                    }, {
+                        src:    './images/home_slider/image5.jpg'
+                    }],
+                    transition: 'slideUp2'
                 });
             });
         </script>

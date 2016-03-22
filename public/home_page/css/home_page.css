@@ -21,6 +21,10 @@
     }
 /* Fonts End */
 
+body {
+    background-color:   black;
+}
+
 h1, h2 {
     /* Styles the header's text */
     position:           relative;
