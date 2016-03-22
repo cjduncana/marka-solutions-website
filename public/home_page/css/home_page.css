@@ -350,6 +350,22 @@ section:not(#home) > div {
     }
 /* About Us Section End */
 
+/* Footer */
+    footer {
+        background:         url(../../images/bg_pattern_black.jpg);
+        padding-top:        50px;
+    }
+    footer div {
+        width:              952px;
+        height:             231px;
+        background:         url(../../images/footer.png);
+        color:              white;
+        text-align:         center;
+        margin:             0 auto;
+        line-height:        231px;
+    }
+/* Footer End */
+
 /* For devices larger than 400px */
 @media (min-width: 400px) {
 

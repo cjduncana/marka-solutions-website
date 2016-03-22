@@ -128,11 +128,6 @@
         </section>
         <!-- Home End -->
     </main>
-    <!-- Main Content Filled With Sections End -->
-
-    <!-- Footer -->
-    <footer></footer>
-    <!-- Footer End -->
 
     <!-- Scripts -->
         <!--  Vegas 2.2.0  -->
@@ -186,6 +181,9 @@
                 // Add the rest of the home page
                 $.get('index_content.html', function(data) {
                     $('main').append(data);
+                });
+                $.get('index_footer.html', function(data) {
+                    $('main').after(data);
                 });
                         
                 // Allow submenus in the navigation bar
