@@ -106,7 +106,14 @@
                 <img src="./images/supersized/pause.png">
                 <img style="display: none" src="./images/supersized/play.png">
             </div>
-            <div id="slideshownavigation"></div>
+            <div id="slideshownavigation">
+                <ul>
+                    <li>01</li>
+                    <li>02</li>
+                    <li>03</li>
+                    <li>04</li>
+                </ul>
+            </div>
         </section>
         <!-- Home End -->
     </main>
@@ -133,11 +140,19 @@
                     }, {
                         src:    './images/home_slider/image5.jpg'
                     }],
-                    transition: 'slideUp2'
+                    transition: 'slideUp2',
+                    walk:       function(index, slideSettings) {
+                        $('#slideshownavigation ul li').removeClass('active');
+                        $('#slideshownavigation ul li').eq(index).addClass('active');
+                        $('#slideshownavigation .active:after').css('top', index * 18 + 18)
+                    }
                 });
                 $('#pauseplay img').click(function() {
                     $('#pauseplay img').toggle();
                     vegasBkgd.vegas('toggle');
+                });
+                $('#slideshownavigation ul li').click(function() {
+                    vegasBkgd.vegas('jump', $(this).index());
                 });
             });
         </script>

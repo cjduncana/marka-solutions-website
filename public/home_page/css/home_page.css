@@ -158,6 +158,35 @@ section:not(#home) > div {
     #home #pauseplay:hover {
         opacity:            1.0
     }
+    #home #slideshownavigation ul {
+        position:           absolute;
+        right:              0;
+        top:                50%;
+    }
+    #home #slideshownavigation ul li {
+        color:              white;
+        list-style:         none;
+        margin:             0;
+        background-color:   black;
+        width:              36px;
+        height:             36px;
+        text-align:         center;
+        line-height:        36px;
+        cursor:             pointer;
+    }
+    #home #slideshownavigation .active {
+        background-color:  red;
+    }
+    #home #slideshownavigation .active:after {
+        right:              100%;
+        border:             solid transparent;
+        content:            " ";
+        height:             0;
+        width:              0;
+        position:           absolute;
+        border-right-color: red;
+        border-width:       18px;
+}
 /* Home Section End */
 
 /* Services Section */
