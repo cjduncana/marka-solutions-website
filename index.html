@@ -214,6 +214,15 @@
                         });
                     }
                 });
+
+                // Change click behavior for the navigation bar
+                $('nav a[href^="#"]').click(function(event) {
+                    var anchor = $(this).attr('href');
+                    event.preventDefault();
+                    $('body').animate({
+                        scrollTop:  $(anchor).offset().top - 68
+                    })
+                });
             });
         </script>
         <!-- Go to www.addthis.com/dashboard to customize your tools -->
