@@ -143,6 +143,31 @@ section:not(#home) > div {
         position:           fixed;
         background-color:   rgb(17, 17, 17);
     }
+    #scrollTop {
+        position:           fixed;
+        width:              30px;
+        height:             30px;
+        left:               50px;
+        overflow:           hidden;
+        display:            inline-block;
+        float:              left;
+        background:         #222 url(../../images/sprite.png);
+        background-image:   -Webkit-image-set(
+                                url(../../images/sprite.png) 1x,
+                                url(../../images/sprite@2x.png) 2x);
+        background-position:100% 0;
+        background-repeat:  no-repeat;
+        margin-top:         17px;
+        cursor:             pointer;
+        z-index:            9999999997;
+        -webkit-border-radius:20px;
+        -moz-border-radius: 20px;
+        border-radius:      20px
+    }
+    #scrollTop:hover {
+        background-color:   #ef3d42;
+        background-position:100% -20px
+    }
 /* Navigation Bar End */
 
 /* Home Section */
