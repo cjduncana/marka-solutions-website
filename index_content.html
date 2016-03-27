@@ -452,10 +452,12 @@
                     if ($(window).scrollTop() < $('#services').offset().top - 68) {
                         $('#underlay').hide('fast', function() {
                             $('nav').css('top', 50);
+                            $('#social').css('top', 0);
                         });
                     } else {
                         $('#underlay').show('fast', function() {
                             $('nav').css('top', 15);
+                            $('#social').css('top', 68);
                         });
                     }
                 });
