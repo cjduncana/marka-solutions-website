@@ -449,7 +449,7 @@
 
                 // Change navigation bar based on where you are on the page
                 $(document).scroll(function() {
-                    if ($(window).scrollTop() < $('#services').offset().top) {
+                    if ($(window).scrollTop() < $('#services').offset().top - 68) {
                         $('#underlay').hide('fast', function() {
                             $('nav').css('top', 50);
                         });
@@ -462,19 +462,19 @@
 
                 // Give the active class to navigation bar menu dependent on position in page
                 $(document).scroll(function() {
-                    if ($(window).scrollTop() < $('#services').offset().top) {
+                    if ($(window).scrollTop() < $('#services').offset().top - 68) {
                         $('nav li a[href!="#home"]').removeClass('active');
                         $('nav li a[href="#home"]').addClass('active');
-                    } else if ($(window).scrollTop() < $('#portfolio').offset().top) {
+                    } else if ($(window).scrollTop() < $('#portfolio').offset().top - 68) {
                         $('nav li a[href!="#services"]').removeClass('active');
                         $('nav li a[href="#services"]').addClass('active');
-                    } else if ($(window).scrollTop() < $('#twitter').offset().top) {
+                    } else if ($(window).scrollTop() < $('#twitter').offset().top - 68) {
                         $('nav li a[href!="#portfolio"]').removeClass('active');
                         $('nav li a[href="#portfolio"]').addClass('active');
-                    } else if ($(window).scrollTop() < $('#aboutus').offset().top) {
+                    } else if ($(window).scrollTop() < $('#aboutus').offset().top - 68) {
                         $('nav li a[href]').removeClass('active');
                         $('nav li a').not('[href]').addClass('active');
-                    } else if ($(window).scrollTop() < $('#contactus').offset().top) {
+                    } else if ($(window).scrollTop() < $('#contactus').offset().top - 68) {
                         $('nav li a[href!="#aboutus"]').removeClass('active');
                         $('nav li a[href="#aboutus"]').addClass('active');
                     } else {
