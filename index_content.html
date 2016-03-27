@@ -450,6 +450,19 @@
                 // Change navigation bar based on where you are on the page
                 $(document).scroll(function() {
                     if ($(window).scrollTop() < $('#services').offset().top) {
+                        $('#underlay').hide('fast', function() {
+                            $('nav').css('top', 50);
+                        });
+                    } else {
+                        $('#underlay').show('fast', function() {
+                            $('nav').css('top', 15);
+                        });
+                    }
+                });
+
+                // Give the active class to navigation bar menu dependent on position in page
+                $(document).scroll(function() {
+                    if ($(window).scrollTop() < $('#services').offset().top) {
                         $('nav li a[href!="#home"]').removeClass('active');
                         $('nav li a[href="#home"]').addClass('active');
                     } else if ($(window).scrollTop() < $('#portfolio').offset().top) {
