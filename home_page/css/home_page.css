@@ -113,6 +113,7 @@ section:not(#home) > div {
         outline:            none;
         text-decoration:    none;
         color:              rgb(239, 61, 66);
+        cursor:             pointer;
     }
     nav a span {
         display:            block;
