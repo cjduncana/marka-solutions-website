@@ -322,6 +322,26 @@ section:not(#home) > div {
         color:              #d5d5d5;
     }
 
+    #vegasDetail {
+        float:              left;
+        width:              640px;
+        height:             450px;
+        margin:             10px;
+    }
+    #infoDetail {
+        float:              left;
+        width:              280px;
+        height:             450px;
+        margin:             10px;
+    }
+    #infoDetail .title {
+        color:              #eee;
+        text-transform:     uppercase;
+        font-weight:        400;
+        font-family:        'OswaldRegular', Arial, Helvetica, sans-serif;
+        font-size:          22px;
+    }
+
     .gallery-option {
         float:              right;
         margin:             15px;
