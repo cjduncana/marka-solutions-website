@@ -185,10 +185,10 @@
             $(document).ready(function() {
 
                 // Add the rest of the home page
-                $.get('index_content.html', function(data) {
+                $.get('./home_page/index_content.html', function(data) {
                     $('main').append(data);
                 });
-                $.get('index_footer.html', function(data) {
+                $.get('./home_page/index_footer.html', function(data) {
                     $('main').after(data);
                 });
                         
