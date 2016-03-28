@@ -344,6 +344,7 @@ section:not(#home) > div {
         height:             auto;
         float:              left;
         margin:             5px;
+        cursor:             pointer;
     }
 
     .gallery-item img {

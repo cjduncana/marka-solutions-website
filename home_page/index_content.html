@@ -203,6 +203,7 @@
                 </div>
             </header>
             <div>
+                <div id="galleryDetails"></div>
                 <div class="gallery-options">
                     <a class="gallery-option" href="javascript:galleryFilter()">Todos</a>
                     <a class="gallery-option" href="javascript:galleryFilter('redes')">Redes Sociales</a>
@@ -308,6 +309,13 @@
                             $('.gallery-item').show();
                     }
                 }
+
+
+                $('.gallery').find('.gallery-item').click(function() {
+                    $.get('./portfolio/' + $(this).find('span').text() + '.html', function(data) {
+                        $('#galleryDetails').html(data);
+                    });
+                });
             </script>
         </section>
         <!-- Portfolio End -->
