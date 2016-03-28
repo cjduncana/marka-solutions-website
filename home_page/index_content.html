@@ -310,9 +310,16 @@
                     }
                 }
 
-
                 $('.gallery').find('.gallery-item').click(function() {
-                    $.get('./portfolio/' + $(this).find('span').text() + '.html', function(data) {
+                    var file = $(this).find('span').text();
+                    file = file.replace(/ /g, '_');
+                    file = file.replace(/á/g, 'a');
+                    file = file.replace(/é/g, 'e');
+                    file = file.replace(/í/g, 'i');
+                    file = file.replace(/ó/g, 'o');
+                    file = file.replace(/ú/g, 'u');
+                    file = file.replace(/ñ/g, 'n');
+                    $.get('./home_page/portfolio/' + file + '.html', function(data) {
                         $('#galleryDetails').html(data);
                     });
                 });
