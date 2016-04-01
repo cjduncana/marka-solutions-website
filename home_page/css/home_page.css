@@ -540,8 +540,13 @@ section:not(#home) > div {
     }
 
      /* Timeline section */
-    #timeline div {
+    #timeline > div > div {
         padding:            25px;
+        overflow:           auto;
+    }
+    #timeline > div > div > div {
+        width:              50%;
+        float:              left;
     }
 
     /* Video section */
