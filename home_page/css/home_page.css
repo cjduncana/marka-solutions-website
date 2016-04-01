@@ -449,6 +449,29 @@ section:not(#home) > div {
                                     url(../../images/bg_pattern_black.jpg) 1x,
                                     url(../../images/bg_pattern_black@2x.jpg) 2x
                                 );
+        overflow:               auto;
+    }
+    #contactus > div > div > div {
+        width:                  45%;
+        float:                  left;
+        padding-left:           25px;
+        padding-top:            25px;
+    }
+    #contactus > div > div > div:last-child {
+        float:                  right;
+    }
+    #contactus > div > div > div p {
+        font-size:              13px;
+        font-family:            'Open Sans',
+                                'Helvetica Neue', Helvetica,
+                                'Lucida Sans Unicode', 'Lucida Grande',
+                                Arial, sans-serif;
+        font-weight:            bold;
+        line-height:            1.65;
+        text-align:             right;
+    }
+    #contactus > div > div > div iframe {
+        width:                  100%;
     }
 /* Contact Us End */
 
