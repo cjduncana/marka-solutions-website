@@ -427,7 +427,11 @@ section:not(#home) > div {
 
     section#aboutus > div > div > div {
         float:              left;
-        width:              50%;
+        width:              45%;
+        padding:            10px;
+    }
+    section#aboutus > div > div > div:last-child {
+        float:              right;
     }
 /* About Us Section End */
 
