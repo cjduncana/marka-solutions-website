@@ -382,8 +382,8 @@ section:not(#home) > div {
     }
 /* Portfolio Section End */
 
-/* Twitter Section */
-    #twitter .parallax {
+/* Timeline Section */
+    #timeline .parallax {
         background:             url(../img/parallax_overlay.svg),
                                 url(../../images/background/image2.jpg);
         background-attachment:  scroll, fixed;
@@ -391,10 +391,23 @@ section:not(#home) > div {
         background-repeat:      repeat, repeat-y;
     }
 
-    #twitter div {
+    #timeline > div {
         padding:            50px;
     }
-/* Twitter Section End */
+
+    #timeline > div > div {
+        overflow:           auto;
+    }
+    #timeline > div > div > div {
+        width:              49%;
+    }
+    #twitter {
+        float:              left;
+    }
+    #facebook {
+        float:              right;
+    }
+/* Timeline Section End */
 
 /* Video Section */
     #sample_video .parallax {
