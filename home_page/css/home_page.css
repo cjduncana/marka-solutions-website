@@ -269,9 +269,10 @@ section:not(#home) > div {
         background-color:   #1a1a1a;
         border-radius:      100%;
         width:              160px;
+        height:             160px;
     }
 
-    .service span {
+    .service > span {
         /* Text styling */
         color:              white;
         font-family:        'OswaldRegular', Arial, Helvetica, sans-serif;
@@ -281,6 +282,24 @@ section:not(#home) > div {
         /* Text positioning */
         display:            block;
         text-align:         center;
+        margin-top:         175px;
+    }
+
+    .back > div {
+        text-align:         center;
+        height:             160px;
+        width:              160px;
+    }
+    .back > div > span {
+        /* Text styling */
+        color:              white;
+        font-family:        'OswaldRegular', Arial, Helvetica, sans-serif;
+        font-size:          18px;
+        font-weight:        400;
+        /* Positioning */
+        display:            block;
+        position:           relative;
+        top:                -115px;
     }
 
     .fancybox-title {
