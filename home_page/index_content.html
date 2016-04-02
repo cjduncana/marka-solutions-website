@@ -329,6 +329,10 @@
                     file = file.replace(/ñ/g, 'n');
                     $.get('./home_page/portfolio/' + file + '.html', function(data) {
                         $('#galleryDetails').html(data);
+                        $('#galleryDetails').prepend('<div class="gallery-close-button"></div>');
+                        $('.gallery-close-button').click(function() {
+                            $('#galleryDetails').html('');
+                        });
                     });
                 });
             </script>

@@ -341,6 +341,19 @@ section:not(#home) > div {
         color:              #d5d5d5;
     }
 
+    .gallery-close-button {
+        content:            ' ';
+        width:              40px;
+        height:             40px;
+        cursor:             pointer;
+        background:         transparent url(../../images/next_previous_button_white.png);
+        background-image:   -Webkit-image-set(
+                                url(../../images/next_previous_button_white.png) 1x,
+                                url(../../images/next_previous_button_white@2x.png) 2x
+                            );
+        background-position: 50% 0;
+        background-repeat:  no-repeat;
+    }
     #vegasDetail {
         float:              left;
         width:              640px;
