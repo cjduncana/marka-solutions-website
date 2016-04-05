@@ -27,12 +27,6 @@
     <!-- Scripts -->
         <!-- JQuery 1.7.1 -->
         <script type="text/javascript"  src="./home_page/js/jquery-1.7.1.min.js"></script>
-        <script type="text/javascript">
-            // Make the first section the size of the screen
-            $(function() {
-                $('#home').height($(window).height());
-            })
-        </script>
         <!-- Google Analytics -->
         <script type="text/javascript">
             var _gaq = _gaq || [];
@@ -205,7 +199,7 @@
                 $.get('./home_page/index_footer.html', function(data) {
                     $('main').after(data);
                 });
-                        
+
                 // Allow submenus in the navigation bar
                 $('nav').find('li').each(function() {
                     if ($(this).find('ul').length > 0) {
@@ -223,7 +217,7 @@
                         $(this).mouseenter(function() {
                             $(this).find('ul').stop(true, true).slideDown();
                         });
-                                
+
                         // Hide submenus on exit
                         $(this).mouseleave(function() {
                             $(this).find('ul').stop(true, true).slideUp();

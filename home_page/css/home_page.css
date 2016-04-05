@@ -173,6 +173,7 @@ section:not(#home) > div {
 /* Home Section */
     #home #logo {
         width:              100%;
+        height:             100vh;
         max-width:          960px;
         margin:             0 auto;
     }
