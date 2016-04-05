@@ -495,7 +495,9 @@ section:not(#home) > div {
                                     url(../../images/bg_pattern_black.jpg) 1x,
                                     url(../../images/bg_pattern_black@2x.jpg) 2x
                                 );
-        overflow:               auto;
+        display:                  flex;
+        flex-wrap:                wrap;
+        justify-content:          space-around;
     }
     #contactus > div > div > div {
         width:                  45%;
