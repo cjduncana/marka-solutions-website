@@ -173,6 +173,7 @@ section:not(#home) > div {
 /* Home Section */
     #home #logo {
         width:              100%;
+        height:             100vh;
         max-width:          960px;
         margin:             0 auto;
     }
@@ -494,7 +495,9 @@ section:not(#home) > div {
                                     url(../../images/bg_pattern_black.jpg) 1x,
                                     url(../../images/bg_pattern_black@2x.jpg) 2x
                                 );
-        overflow:               auto;
+        display:                  flex;
+        flex-wrap:                wrap;
+        justify-content:          space-around;
     }
     #contactus > div > div > div {
         width:                  45%;
@@ -565,10 +568,68 @@ section:not(#home) > div {
     }
 }
 
-@media only screen and (min-width:480px) and (max-width:767px) {
+@media only screen and (max-width:767px) {
 
+    section:not(#home) > header > *, section:not(#home) > div > * {
+        padding:            0;
+    }
+
+    /* Navigation Bar */
+    .menuButton {
+        background:         url('../img/menu.svg') no-repeat center;
+        background-size:    30px;
+        z-index:            1;
+        position:           fixed;
+        right:              0px;
+        width:              68px;
+        height:             68px;
+    }
+
+    nav ul {
+        display:            none;
+    }
+    nav .showMenu {
+        background-color:   rgb(17, 17, 17);
+        display:            flex;
+        flex-direction:     column;
+        position:           fixed;
+        top:                67px;
+        left:               0;
+        width:              100vw;
+        padding-bottom:     15px;
+    }
+    nav .showMenu > li {
+        width:              100vw;
+        display:            flex;
+        align-items:        flex-start;
+        flex-wrap:          wrap;
+    }
+    nav .showMenu > li > div {
+        flex-basis:         25%;
+    }
+    nav ul li .toggleSubMenu {
+        background:         url('../img/arrow-down.svg') no-repeat center;
+        background-size:    18px;
+        width:              18px;
+        height:             18px;
+        padding:            10px 0;
+    }
+    nav ul li ul li {
+        display:            none;
+    }
+    nav ul li .showSubMenu {
+        background-color:   rgb(31, 31, 31);
+        height:             38px;
+        width:              100vw;
+        display:            flex;
+        flex-wrap:          wrap;
+    }
+    nav ul li .showSubMenu > li {
+        width:              100%;
+    }
+
+    /* Section's header type size */
     section > header > h1 {
-        /* Section's header type size */
         font-size:          50px
     }
 
@@ -580,11 +641,14 @@ section:not(#home) > div {
     }
 
     /* Portfolio section */
+    #vegasDetail {
+        width:              100%;
+    }
     .gallery-item {
-        width:              170px;
+        width:              138px;
     }
 
-     /* Timeline section */
+    /* Timeline section */
     #timeline > div > div {
         padding:            25px;
         overflow:           auto;
@@ -596,36 +660,9 @@ section:not(#home) > div {
 
     /* Video section */
     #sample_video div img, #sample_video div iframe {
-        margin-top:         10px;
-        margin-bottom:      10px;
-    }
-
-     /* About Us section */
-    section#aboutus div {
-        padding-bottom:     25px;
-    }
-
-    section#aboutus > div > header, section#aboutus > div > div {
-        padding-top:        25px;
-    }
-}
-
-@media only screen and (max-width:480px) {
-
-    /* Portfolio section */
-    .gallery-item {
-        width:              138px;
-    }
-
-     /* Twitter section */
-     #twitter div {
-        padding:            5px;
-    }
-
-    /* Video section */
-    #sample_video div img, #sample_video div iframe {
         margin-top:         5px;
         margin-bottom:      5px;
+        width:              100%;
     }
 
      /* About Us section */
@@ -635,5 +672,12 @@ section:not(#home) > div {
 
     section#aboutus > div > header, section#aboutus > div > div {
         padding-top:        5px;
+    }
+
+    /* Footer section */
+    footer div {
+        width:              100%;
+        height:             auto;
+        /*background:         transparent;*/
     }
 }
