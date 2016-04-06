@@ -568,10 +568,14 @@ section:not(#home) > div {
     }
 }
 
-@media only screen and (min-width:480px) and (max-width:767px) {
+@media only screen and (max-width:767px) {
 
+    section:not(#home) > header > *, section:not(#home) > div > * {
+        padding:            0;
+    }
+
+    /* Section's header type size */
     section > header > h1 {
-        /* Section's header type size */
         font-size:          50px
     }
 
@@ -583,11 +587,14 @@ section:not(#home) > div {
     }
 
     /* Portfolio section */
+    #vegasDetail {
+        width:              100%;
+    }
     .gallery-item {
-        width:              170px;
+        width:              138px;
     }
 
-     /* Timeline section */
+    /* Timeline section */
     #timeline > div > div {
         padding:            25px;
         overflow:           auto;
@@ -599,36 +606,9 @@ section:not(#home) > div {
 
     /* Video section */
     #sample_video div img, #sample_video div iframe {
-        margin-top:         10px;
-        margin-bottom:      10px;
-    }
-
-     /* About Us section */
-    section#aboutus div {
-        padding-bottom:     25px;
-    }
-
-    section#aboutus > div > header, section#aboutus > div > div {
-        padding-top:        25px;
-    }
-}
-
-@media only screen and (max-width:480px) {
-
-    /* Portfolio section */
-    .gallery-item {
-        width:              138px;
-    }
-
-     /* Twitter section */
-     #twitter div {
-        padding:            5px;
-    }
-
-    /* Video section */
-    #sample_video div img, #sample_video div iframe {
         margin-top:         5px;
         margin-bottom:      5px;
+        width:              100%;
     }
 
      /* About Us section */
@@ -638,5 +618,12 @@ section:not(#home) > div {
 
     section#aboutus > div > header, section#aboutus > div > div {
         padding-top:        5px;
+    }
+
+    /* Footer section */
+    footer div {
+        width:              100%;
+        height:             auto;
+        /*background:         transparent;*/
     }
 }
