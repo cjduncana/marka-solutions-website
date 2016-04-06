@@ -65,6 +65,7 @@
     <div id="underlay">
         <div id="scrollTop"></div>
     </div>
+    <div class="menuButton"></div>
     <nav>
         <ul>
             <li><a class="active" href="#home">Inicio</a></li>
@@ -203,27 +204,38 @@
                 });
 
                 // Allow submenus in the navigation bar
-                $('nav').find('li').each(function() {
-                    if ($(this).find('ul').length > 0) {
+                $('nav > ul').children('li').each(function() {
+                    if ($(window).width() <= 767) {
+                        $(this).children('a').click(function() {
+                            $('nav > ul').removeClass('showMenu');
+                        });
+                        $(this).prepend('<div></div>')
+                        $(this).has('ul').children('div').addClass('toggleSubMenu');
+                        $(this).has('ul').children('ul').children('.toggleSubMenu').click(function() {
+                            // TODO Toggle submenu
+                            // $(this).find('ul').toggleClass('showSubMenu');
+                        });
+                    } else {
+                        if ($(this).find('ul').length > 0) {
+                            // Change width of submenu
+                            var menu_width = $(this).width();
+                            var submenu_width = $(this).find('ul').width();
+                            if (menu_width < submenu_width) {
+                                $(this).width(submenu_width);
+                            } else {
+                                $(this).find('ul').width(menu_width);
+                            }
 
-                        // Change width of submenu
-                        var menu_width = $(this).width();
-                        var submenu_width = $(this).find('ul').width();
-                        if (menu_width < submenu_width) {
-                            $(this).width(submenu_width);
-                        } else {
-                            $(this).find('ul').width(menu_width);
+                            // Show subnav on hover
+                            $(this).mouseenter(function() {
+                                $(this).find('ul').stop(true, true).slideDown();
+                            });
+
+                            // Hide submenus on exit
+                            $(this).mouseleave(function() {
+                                $(this).find('ul').stop(true, true).slideUp();
+                            });
                         }
-
-                        // Show subnav on hover
-                        $(this).mouseenter(function() {
-                            $(this).find('ul').stop(true, true).slideDown();
-                        });
-
-                        // Hide submenus on exit
-                        $(this).mouseleave(function() {
-                            $(this).find('ul').stop(true, true).slideUp();
-                        });
                     }
                 });
 
@@ -241,6 +253,14 @@
                     $('body').animate({
                         scrollTop:  0
                     })
+                });
+
+                $('.menuButton').click(function() {
+                    $('nav').children('ul').toggleClass('showMenu');
+                });
+
+                $('.toggleSubMenu').click(function() {
+                    $(this).parent().find('ul').toggleClass('showSubMenu');
                 });
             });
         </script>
