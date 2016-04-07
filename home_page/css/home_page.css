@@ -254,7 +254,9 @@ section:not(#home) > div {
     }
 
     #services > div > div {
-        overflow:           auto;
+        display:            flex;
+        flex-wrap:          wrap;
+        justify-content:    space-around;
     }
 
     .service {
