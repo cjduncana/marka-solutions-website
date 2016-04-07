@@ -395,14 +395,14 @@ section:not(#home) > div {
     }
 
     .gallery {
-        overflow-x:         hidden;
-        overflow-y:           auto;
+        display:            flex;
+        flex-wrap:          wrap;
+        justify-content:    space-around;
     }
 
     .gallery-item {
         width:              230px;
         height:             auto;
-        float:              left;
         margin:             5px;
         cursor:             pointer;
     }
