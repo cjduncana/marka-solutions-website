@@ -260,7 +260,6 @@ section:not(#home) > div {
     }
 
     .service {
-        float:              left;
         width:              160px;
         height:             220px;
         padding:            15px;
@@ -322,6 +321,12 @@ section:not(#home) > div {
         background-attachment:  scroll, fixed;
         background-size:        1px 1px, 100%;
         background-repeat:      repeat, repeat-y;
+    }
+
+    #clients > div > div {
+        display:            flex;
+        flex-wrap:          wrap;
+        justify-content:    space-around;
     }
 
     #clients img {
