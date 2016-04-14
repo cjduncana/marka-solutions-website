@@ -675,7 +675,8 @@ section:not(#home) > div {
     }
     footer div span {
         position: absolute;
-        bottom: 0;
-        right: calc(100vw / 16);
+        bottom: 10px;
+        right: calc(100vw / 8);
+        font-size: 0.9em;
     }
 }
