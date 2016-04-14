@@ -436,21 +436,14 @@ section:not(#home) > div {
         background-repeat:      repeat, repeat-y;
     }
 
-    #timeline > div {
-        padding:            50px;
-    }
-
     #timeline > div > div {
-        overflow:           auto;
+        display:                flex;
+        flex-wrap:              wrap;
+        justify-content:        space-between;
     }
     #timeline > div > div > div {
-        width:              49%;
-    }
-    #twitter {
-        float:              left;
-    }
-    #facebook {
-        float:              right;
+        margin:                 25px;
+        flex:                   1;
     }
 /* Timeline Section End */
 
@@ -658,16 +651,6 @@ section:not(#home) > div {
     }
     .gallery-item {
         width:              138px;
-    }
-
-    /* Timeline section */
-    #timeline > div > div {
-        padding:            25px;
-        overflow:           auto;
-    }
-    #timeline > div > div > div {
-        width:              50%;
-        float:              left;
     }
 
     /* Video section */
