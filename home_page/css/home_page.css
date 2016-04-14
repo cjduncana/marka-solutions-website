@@ -505,13 +505,8 @@ section:not(#home) > div {
         justify-content:          space-around;
     }
     #contactus > div > div > div {
-        width:                  45%;
-        float:                  left;
-        padding-left:           25px;
-        padding-top:            25px;
-    }
-    #contactus > div > div > div:last-child {
-        float:                  right;
+        flex: 1 1 400px;
+        margin: 25px 25px 0;
     }
     #contactus > div > div > div p {
         font-size:              13px;
