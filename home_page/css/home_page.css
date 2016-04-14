@@ -336,6 +336,11 @@ section:not(#home) > div {
 
 /* Portfolio Section */
 
+    #portfolio > div {
+        display:            flex;
+        flex-direction:     column;
+    }
+
     #portfolio header div span {
         color:              #000;
         text-transform:     uppercase;
