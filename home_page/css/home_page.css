@@ -185,6 +185,7 @@ section:not(#home) > div {
     }
     #home #social {
         position:           fixed;
+        z-index:            1;
     }
     #home #social div > p {
         visibility:         hidden;
