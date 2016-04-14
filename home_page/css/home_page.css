@@ -671,8 +671,15 @@ section:not(#home) > div {
 
     /* Footer section */
     footer div {
-        width:              100%;
-        height:             auto;
-        /*background:         transparent;*/
+        width:              100vw;
+        height:             calc(100vw * 0.2426);
+        position: relative;
+        background-size:    100%;
+        line-height:        normal;
+    }
+    footer div span {
+        position: absolute;
+        bottom: 0;
+        right: calc(100vw / 16);
     }
 }
