@@ -320,7 +320,7 @@ section:not(#home) > div {
         background:             url(../img/parallax_overlay.svg),
                                 url(../../images/background/image1.jpg);
         background-attachment:  scroll, fixed;
-        background-size:        1px 1px, 100%;
+        background-size:        1px 1px, cover;
         background-repeat:      repeat, repeat-y;
     }
 
@@ -433,7 +433,7 @@ section:not(#home) > div {
         background:             url(../img/parallax_overlay.svg),
                                 url(../../images/background/image2.jpg);
         background-attachment:  scroll, fixed;
-        background-size:        2px 2px, 100%;
+        background-size:        2px 2px, cover;
         background-repeat:      repeat, repeat-y;
     }
 
@@ -453,7 +453,7 @@ section:not(#home) > div {
         background:             url(../img/parallax_overlay.svg),
                                 url(../../images/background/image3.jpg);
         background-attachment:  scroll, fixed;
-        background-size:        2px 2px, 100%;
+        background-size:        2px 2px, cover;
         background-repeat:      repeat, repeat-y;
     }
     #sample_video div img, #sample_video div iframe {
@@ -492,7 +492,7 @@ section:not(#home) > div {
         background:             url(../img/parallax_overlay.svg),
                                 url(../../images/background/image4.jpg);
         background-attachment:  scroll, fixed;
-        background-size:        2px 2px, 100%;
+        background-size:        2px 2px, cover;
         background-repeat:      repeat, repeat-y;
     }
     #contactus > div > div {
@@ -529,7 +529,7 @@ section:not(#home) > div {
         background:             url(../img/parallax_overlay.svg),
                                 url(../../images/background/image4.jpg);
         background-attachment:  scroll, fixed;
-        background-size:        2px 2px, 100%;
+        background-size:        2px 2px, cover;
         background-repeat:      repeat, repeat-y;
         padding-top:            50px;
     }
