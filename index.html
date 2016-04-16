@@ -676,53 +676,6 @@
         </section>
         <!-- Contact Us End -->
 
-        <!-- Scripts -->
-        <script type="text/javascript">
-            // Add Parallax effect to those sections with the Parallax class
-            $('.parallax').each(function(){
-                $(this).parallax('50%', 0.4, true);
-            });
-
-            // Change navigation bar based on where you are on the page
-            $(document).scroll(function() {
-                if ($(window).scrollTop() < $('#services').offset().top - 68) {
-                    $('#underlay').hide('fast', function() {
-                        $('nav').css('top', 50);
-                        $('#social').css('top', 0);
-                    });
-                } else {
-                    $('#underlay').show('fast', function() {
-                        $('nav').css('top', 15);
-                        $('#social').css('top', 68);
-                    });
-                }
-            });
-
-            // Give the active class to navigation bar menu dependent on position in page
-            $(document).scroll(function() {
-                if ($(window).scrollTop() < $('#services').offset().top - 68) {
-                    $('nav li a[href!="#home"]').removeClass('active');
-                    $('nav li a[href="#home"]').addClass('active');
-                } else if ($(window).scrollTop() < $('#portfolio').offset().top - 68) {
-                    $('nav li a[href!="#services"]').removeClass('active');
-                    $('nav li a[href="#services"]').addClass('active');
-                } else if ($(window).scrollTop() < $('#twitter').offset().top - 68) {
-                    $('nav li a[href!="#portfolio"]').removeClass('active');
-                    $('nav li a[href="#portfolio"]').addClass('active');
-                } else if ($(window).scrollTop() < $('#aboutus').offset().top - 68) {
-                    $('nav li a').removeClass('active');
-                    $('nav li a:contains("Más")').not('[href]').addClass('active');
-                } else if ($(window).scrollTop() < $('#contactus').offset().top - 68) {
-                    $('nav li a[href!="#aboutus"]').removeClass('active');
-                    $('nav li a[href="#aboutus"]').addClass('active');
-                } else {
-                    $('nav li a[href!="#contactus"]').removeClass('active');
-                    $('nav li a[href="#contactus"]').addClass('active');
-                }
-            });
-        </script>
-        <!-- Scripts End -->
-
     </main>
 
     <!-- Scripts -->
@@ -850,6 +803,49 @@
 
                 $('.toggleSubMenu').click(function() {
                     $(this).parent().find('ul').toggleClass('showSubMenu');
+                });
+
+                // Add Parallax effect to those sections with the Parallax class
+                $('.parallax').each(function(){
+                    $(this).parallax('50%', 0.4, true);
+                });
+
+                // Change navigation bar based on where you are on the page
+                $(document).scroll(function() {
+                    if ($(window).scrollTop() < $('#services').offset().top - 68) {
+                        $('#underlay').hide('fast', function() {
+                            $('nav').css('top', 50);
+                            $('#social').css('top', 0);
+                        });
+                    } else {
+                        $('#underlay').show('fast', function() {
+                            $('nav').css('top', 15);
+                            $('#social').css('top', 68);
+                        });
+                    }
+                });
+
+                // Give the active class to navigation bar menu dependent on position in page
+                $(document).scroll(function() {
+                    if ($(window).scrollTop() < $('#services').offset().top - 68) {
+                        $('nav li a[href!="#home"]').removeClass('active');
+                        $('nav li a[href="#home"]').addClass('active');
+                    } else if ($(window).scrollTop() < $('#portfolio').offset().top - 68) {
+                        $('nav li a[href!="#services"]').removeClass('active');
+                        $('nav li a[href="#services"]').addClass('active');
+                    } else if ($(window).scrollTop() < $('#twitter').offset().top - 68) {
+                        $('nav li a[href!="#portfolio"]').removeClass('active');
+                        $('nav li a[href="#portfolio"]').addClass('active');
+                    } else if ($(window).scrollTop() < $('#aboutus').offset().top - 68) {
+                        $('nav li a').removeClass('active');
+                        $('nav li a:contains("Más")').not('[href]').addClass('active');
+                    } else if ($(window).scrollTop() < $('#contactus').offset().top - 68) {
+                        $('nav li a[href!="#aboutus"]').removeClass('active');
+                        $('nav li a[href="#aboutus"]').addClass('active');
+                    } else {
+                        $('nav li a[href!="#contactus"]').removeClass('active');
+                        $('nav li a[href="#contactus"]').addClass('active');
+                    }
                 });
             });
         </script>
