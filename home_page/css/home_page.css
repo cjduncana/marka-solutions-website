@@ -65,6 +65,11 @@ section:not(.home) > div {
     color:              white;
 }
 
+.anchor {
+    position:           relative;
+    top:                -68px;
+}
+
 .tagline {
     font-size:          20px;
     font-family:        'Open Sans',

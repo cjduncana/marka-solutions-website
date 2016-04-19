@@ -95,6 +95,7 @@
     <!-- Main Content Filled With Sections -->
     <main>
         <!-- Home -->
+        <div id="home" class="anchor"></div>
         <section class="home">
             <div id="logo">
                 <a href="/">
@@ -133,6 +134,7 @@
         <!-- Home End -->
 
         <!-- Services -->
+        <div id="services" class="anchor"></div>
         <section class="services">
             <header>
                 <h1>Servicios</h1>
@@ -323,6 +325,7 @@
         <!-- Services End -->
 
         <!-- Clients -->
+        <div id="clients" class="anchor"></div>
         <section class="clients">
             <header>
                 <h1>Nuestros Clientes</h1>
@@ -343,6 +346,7 @@
         <!-- Clients End -->
 
         <!-- Portfolio -->
+        <div id="portfolio" class="anchor"></div>
         <section class="portfolio">
             <header>
                 <h1>Portafolio</h1>
@@ -481,6 +485,7 @@
         <!-- Portfolio End -->
 
         <!-- Timeline -->
+        <div id="timeline" class="anchor"></div>
         <section class="timeline">
             <header>
                 <h1>Timeline</h1>
@@ -516,6 +521,7 @@
         <!-- Timeline End -->
 
         <!-- Videos -->
+        <div id="sample_video" class="anchor"></div>
         <section class="sample_video">
             <header>
                 <h1>Video</h1>
@@ -573,6 +579,7 @@
         <!-- Videos End -->
 
         <!-- About Us -->
+        <div id="aboutus" class="anchor"></div>
         <section class="aboutus">
             <header>
                 <h1>Team Marka</h1>
@@ -597,6 +604,7 @@
         <!-- About Us End -->
 
         <!-- Contact Us -->
+        <div id="contactus" class="anchor"></div>
         <section class="contactus">
             <header>
                 <h1>Contactos</h1>
@@ -785,8 +793,9 @@
                 $('nav a[href^="#"]').click(function(event) {
                     var anchor = $(this).attr('href');
                     event.preventDefault();
+                    history.pushState({}, '', anchor);
                     $('body').animate({
-                        scrollTop:  $(anchor).offset().top - 68
+                        scrollTop:  $(anchor).offset().top
                     })
                 });
 
@@ -812,7 +821,7 @@
 
                 // Change navigation bar based on where you are on the page
                 $(document).scroll(function() {
-                    if ($(window).scrollTop() < $('#services').offset().top - 68) {
+                    if ($(window).scrollTop() < $('#services').offset().top) {
                         $('#underlay').hide('fast', function() {
                             $('nav').css('top', 50);
                             $('#social').css('top', 0);
@@ -827,19 +836,19 @@
 
                 // Give the active class to navigation bar menu dependent on position in page
                 $(document).scroll(function() {
-                    if ($(window).scrollTop() < $('#services').offset().top - 68) {
+                    if ($(window).scrollTop() < $('#services').offset().top) {
                         $('nav li a[href!="#home"]').removeClass('active');
                         $('nav li a[href="#home"]').addClass('active');
-                    } else if ($(window).scrollTop() < $('#portfolio').offset().top - 68) {
+                    } else if ($(window).scrollTop() < $('#portfolio').offset().top) {
                         $('nav li a[href!="#services"]').removeClass('active');
                         $('nav li a[href="#services"]').addClass('active');
-                    } else if ($(window).scrollTop() < $('#twitter').offset().top - 68) {
+                    } else if ($(window).scrollTop() < $('#twitter').offset().top) {
                         $('nav li a[href!="#portfolio"]').removeClass('active');
                         $('nav li a[href="#portfolio"]').addClass('active');
-                    } else if ($(window).scrollTop() < $('#aboutus').offset().top - 68) {
+                    } else if ($(window).scrollTop() < $('#aboutus').offset().top) {
                         $('nav li a').removeClass('active');
                         $('nav li a:contains("Más")').not('[href]').addClass('active');
-                    } else if ($(window).scrollTop() < $('#contactus').offset().top - 68) {
+                    } else if ($(window).scrollTop() < $('#contactus').offset().top) {
                         $('nav li a[href!="#aboutus"]').removeClass('active');
                         $('nav li a[href="#aboutus"]').addClass('active');
                     } else {
