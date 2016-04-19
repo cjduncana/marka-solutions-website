@@ -677,6 +677,12 @@
 
     </main>
 
+    <!-- Footer -->
+    <footer class="parallax">
+        <div><span>Copyright © 2006 - 2016 Marka Solutions S.A.</span></div>
+    </footer>
+    <!-- Footer End -->
+
     <!-- Scripts -->
         <!--  Vegas 2.2.0  -->
         <script type="text/javascript" src="./home_page/js/vegas.min.js"></script>
@@ -738,11 +744,6 @@
         <!-- After the home section is ready -->
         <script type="text/javascript">
             $(document).ready(function() {
-
-                // Add the rest of the home page
-                $.get('./home_page/index_footer.html', function(data) {
-                    $('main').after(data);
-                });
 
                 // Allow submenus in the navigation bar
                 $('nav > ul').children('li').each(function() {
